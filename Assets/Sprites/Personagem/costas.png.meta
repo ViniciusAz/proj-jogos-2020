@@ -16,10 +16,10 @@ TextureImporter:
     second: costas_3
   - first:
       213: 3310706298154243571
-    second: costas_4
+    second: costas_1
   - first:
       213: 5646909634401493468
-    second: costas_5
+    second: costas_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,9 +111,9 @@ TextureImporter:
         x: 11
         y: 17
         width: 25
-        height: 67
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,36 +126,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costas_1
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 80
-        width: 17
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54ef073118a8ad720800000000000000
-      internalID: 2871759999383699013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: costas_2
       rect:
         serializedVersion: 2
         x: 107
         y: 17
         width: 25
-        height: 67
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,36 +147,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costas_3
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 80
-        width: 17
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ca3856256bb8f520800000000000000
-      internalID: 2736142816736983750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: costas_4
+      name: costas_1
       rect:
         serializedVersion: 2
         x: 59
         y: 16
         width: 25
-        height: 45
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,15 +168,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costas_5
+      name: costas_3
       rect:
         serializedVersion: 2
         x: 155
         y: 16
         width: 25
-        height: 45
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
