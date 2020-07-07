@@ -27,6 +27,7 @@ public class Movimento : MonoBehaviour
         GameObject.Find("porta-quarto-a").GetComponent<Renderer>().enabled = false;
         GameObject.Find("porta-baixo-a").GetComponent<Renderer>().enabled = false;
         GameObject.Find("porta-sala1-a (2)").GetComponent<Renderer>().enabled = false;
+        GameObject.Find("porta-sala1-a").GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -97,13 +98,18 @@ public class Movimento : MonoBehaviour
             GameObject.Find("chave1").SetActive(false);
             chave1 = 1;
 
-        }else if ((collision.gameObject.name == "porta-sala1-f (2)") && chave1 == 1)
+        }
+        else if ((collision.gameObject.name == "porta-sala1-f (2)") && chave1 == 1)
         {
             GameObject.Find("porta-sala1-f (2)").SetActive(false);
             //GameObject.Find("porta-quarto-a").SetActive(true);
             GameObject.Find("porta-sala1-a (2)").GetComponent<Renderer>().enabled = true;
         }
-
-
+        else if ((collision.gameObject.name == "estante-livros-secret") && chave1 == 1) 
+        {
+            GameObject.Find("porta-sala1-f").SetActive(false);
+            //GameObject.Find("porta-quarto-a").SetActive(true);
+            GameObject.Find("porta-sala1-a").GetComponent<Renderer>().enabled = true;
+        }
     }
 }
