@@ -17,6 +17,14 @@ public class Movimento : MonoBehaviour
 
         m_Rigidbody = GetComponent<Rigidbody2D>();
         m_Rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+
+
+
+        //GameObject.Find("porta-quarto-a").SetActive(false);
+        GameObject.Find("porta-quarto-a").GetComponent<Renderer>().enabled = false;
+
+
     }
 
     // Update is called once per frame
@@ -62,6 +70,18 @@ public class Movimento : MonoBehaviour
             anim.SetBool("Frente", false);
             anim.SetBool("Esquerda", false);
             anim.SetBool("Direita", false);
+        }
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Check for a match with the specified name on any GameObject that collides with your GameObject
+        if (collision.gameObject.name == "armario-quarto") {
+            GameObject.Find("porta-quarto-f").SetActive(false);
+            //GameObject.Find("porta-quarto-a").SetActive(true);
+            GameObject.Find("porta-quarto-a").GetComponent<Renderer>().enabled = true;
+                
         }
     }
 }
