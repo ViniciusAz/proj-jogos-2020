@@ -11,6 +11,8 @@ public class Movimento : MonoBehaviour
 
     Rigidbody2D m_Rigidbody;
 
+    int chave1;
+
     // Start is called before the first frame update
     void Start() {
         anim = GetComponent<Animator>();
@@ -19,12 +21,12 @@ public class Movimento : MonoBehaviour
         m_Rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
 
 
-
+        chave1 = 0;
 
         //GameObject.Find("porta-quarto-a").SetActive(false);
         GameObject.Find("porta-quarto-a").GetComponent<Renderer>().enabled = false;
-
-
+        GameObject.Find("porta-baixo-a").GetComponent<Renderer>().enabled = false;
+        GameObject.Find("porta-sala1-a (2)").GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -83,5 +85,25 @@ public class Movimento : MonoBehaviour
             GameObject.Find("porta-quarto-a").GetComponent<Renderer>().enabled = true;
                 
         }
+        else if (collision.gameObject.name == "bota2")
+        {
+            GameObject.Find("porta-baixo-f").SetActive(false);
+            //GameObject.Find("porta-quarto-a").SetActive(true);
+            GameObject.Find("porta-baixo-a").GetComponent<Renderer>().enabled = true;
+
+        }
+        else if (collision.gameObject.name == "chave1")
+        {
+            GameObject.Find("chave1").SetActive(false);
+            chave1 = 1;
+
+        }else if ((collision.gameObject.name == "porta-sala1-f (2)") && chave1 == 1)
+        {
+            GameObject.Find("porta-sala1-f (2)").SetActive(false);
+            //GameObject.Find("porta-quarto-a").SetActive(true);
+            GameObject.Find("porta-sala1-a (2)").GetComponent<Renderer>().enabled = true;
+        }
+
+
     }
 }
